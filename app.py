@@ -24,8 +24,7 @@ def product_to_dict(product):
 
 @app.route('/')
 def index():
-    """Render the main page"""
-    return render_template('index.html')
+    return {"message": "Backend is running successfully!"}
 
 
 @app.route('/api/products', methods=['GET'])
